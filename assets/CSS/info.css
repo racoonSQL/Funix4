@@ -1,0 +1,305 @@
+/* 
+    Theme Name : Hưng Yên
+    Theme Disciption : HTML/CSS
+    Author : Tran Viet Thang
+    Version : 1.0.0
+ */
+ /* ============== Table of Content =========
+    1, setting
+    2, header
+    3, history
+    4, geography
+    5, economy
+    6, society
+    7, footer
+  */
+
+/* ========= 1, setting =========*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* =========== 2, header ========== */
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+}
+.header .header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+.header .header__top .header__top-logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.header .header__top .header__top-logo .logo__link:hover {
+    color: rgb(16, 145, 243);
+}
+.header .header__top .header__top-list {
+    display: flex;
+}
+.header .header__top .header__top-list .list__item {
+    padding: 18px;
+}
+.header .header__top .header__top-list .list__item .list__item-link {
+    font-size: 21px;
+    font-weight: 700;
+}
+.header .header__top .header__top-list .list__item .list__item-link:hover {
+    color: #ff324d;
+}
+
+@media (max-width:575.98px) {
+    .header .header__top {
+        padding: 16px 0;
+        flex-direction: column;
+    }
+    .header .header__top .header__top-logo {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .header .header__top .header__top-list {
+        flex-wrap: wrap;
+    }
+    .header .header__top .header__top-list .list__item {
+        width: 100%;
+        text-align: center;
+    }
+    .header .header__top .header__top-list .list__item .list__item-link {
+        font-size: 18px;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px) {
+    .header .header__top {
+        padding: 16px 0;
+    }
+    .header .header__top .header__top-logo {
+        font-size: 22px;
+    }
+    .header .header__top .header__top-list .list__item .list__item-link {
+        font-size: 18px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .header .header__top {
+        padding: 16px 0;
+    }
+    .header .header__top .header__top-logo {
+        font-size: 22px;
+    }
+    .header .header__top .header__top-list .list__item .list__item-link {
+        font-size: 18px;
+    }
+}
+
+/* =========== 3, history ========== */
+.history {
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(189, 226, 255, 0.712);
+}
+.history .history__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.history .history__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* =========== 4, geography ========== */
+.geography {
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(189, 255, 211, 0.712);
+}
+.geography .geography__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.geography .geography__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* =========== 5, economy ========== */
+.economy {
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(252, 218, 230, 0.712);
+}
+.economy .economy__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.economy .economy__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* =========== 6, society ========== */
+.society {
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(252, 251, 218, 0.712);
+}
+.society .society__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.society .society__subtitle {
+    font-size: 22px;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+.society .society__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* =========== 7, footer ========== */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+}
+.footer .container {
+    padding: 0;
+}
+.footer .footer__block {}
+.footer .footer__block .footer__block-top {
+    padding: 50px 0;
+    display: flex;
+    margin: 0 auto;
+}
+.footer .footer__block .footer__block-top .top__box {
+    width: calc(100%/3);
+    padding: 0 12px;
+}
+.footer .footer__block .footer__block-top .top__box .top__box-title {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.footer .footer__block .footer__block-top .top__box .top__box-paragraph {
+    font-size: 21px;
+    text-align: center;
+}
+.footer .footer__block .footer__block-top .top__box .top__box-photo {
+    display: flex;
+    justify-content: center;
+}
+.footer .footer__block .footer__block-top .top__box .top__box-photo .photo__link .photo__link-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 4px;
+}
+.footer .footer__block .footer__block-top .top__box .top__box-paragraph .paragraph__link {
+    font-size: 21px;
+    color: #1abc9c;
+    text-decoration: underline;
+}
+.footer .footer__block .footer__block-bottom {
+    background-color: #1a252f;
+    padding: 24px 0;
+}
+.footer .footer__block .footer__block-bottom .bottom__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer__block .footer__block-bottom .bottom__box .bottom__box-para {
+    font-size: 17px;
+    color: #fff;
+}
+@media (max-width:575.98px) {
+    .footer .footer__block .footer__block-top {
+        flex-direction: column;
+    }
+    .footer .footer__block .footer__block-top .top__box {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .footer .footer__block .footer__block-top .top__box:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px) {
+    .footer .footer__block .footer__block-top {
+        flex-direction: column;
+    }
+    .footer .footer__block .footer__block-top .top__box {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .footer .footer__block .footer__block-top .top__box:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .footer .footer__block .footer__block-top {
+        flex-direction: column;
+    }
+    .footer .footer__block .footer__block-top .top__box {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .footer .footer__block .footer__block-top .top__box:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+
+/* container */
+@media (max-width:575.98px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width:1200px) and (max-width:1399.98px) {
+    .container {
+        width: 1140px;
+    }
+}
